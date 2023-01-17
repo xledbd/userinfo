@@ -19,7 +19,7 @@ def write_to_json(path):
     fp = sys.stdout
     if path != None:
         fp = open(path, 'w')
-    json.dump(_get_user_data(), fp)
+    json.dump(_get_user_data(), fp, indent='  ')
     fp.close()
 
 def write_to_csv(path):
@@ -27,7 +27,7 @@ def write_to_csv(path):
     if path != None:
         fp = open(path, 'w', newline='')
     users = _get_user_data()
-    fieldnames = users.keys()
+    fieldnames = ['name', 'id', 'home', 'shell']
     writer = csv.DictWriter(fp, fieldnames=fieldnames)
 
     writer.writeheader()
