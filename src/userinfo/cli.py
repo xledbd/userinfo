@@ -1,4 +1,4 @@
-from argparse import ArgumentParser, Action
+from argparse import ArgumentParser
 
 def create_parser():
     parser = ArgumentParser(description='Export user info in JSON or CSV format.')
@@ -16,7 +16,7 @@ def create_parser():
     return parser
 
 def main():
-    import pwdparser
+    from userinfo import pwdparser
 
     args = create_parser().parse_args()
     if args.format == 'json':
