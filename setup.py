@@ -14,5 +14,10 @@ setup(
     url='https://github.com/xledbd/userinfo',
     packages=find_packages('src'),
     package_dir={'': 'src'},
-    python_requires='>=3.7'
+    python_requires='>=3.7',
+    entry_points={
+        'console_scripts': [
+            'userinfo=userinfo.cli:main'
+        ],
+    }
 )
