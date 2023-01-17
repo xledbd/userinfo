@@ -8,7 +8,7 @@ setup(
     version='0.1.0',
     author='Siarhei Audzeichyk',
     author_email='siarhei.audzeichyk@gmail.com',
-    description='A tool for exporting user information into JSON or CSV format',
+    description='A tool for exporting user information into JSON or CSV file',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/xledbd/userinfo',

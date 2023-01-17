@@ -1,7 +1,7 @@
 userinfo
 ===
 
-CLI tool for exporting user information into JSON or CSV format.
+CLI tool for exporting user information into JSON or CSV file.
 
 ## Usage
 
