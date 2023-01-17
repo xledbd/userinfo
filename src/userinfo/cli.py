@@ -16,6 +16,10 @@ def create_parser():
     return parser
 
 def main():
+    import pwdparser
 
     args = create_parser().parse_args()
-    print(args)
+    if args.format == 'json':
+        pwdparser.write_to_json(args.path)
+    elif args.format == 'csv':
+        pwdparser.write_to_csv(args.path)
